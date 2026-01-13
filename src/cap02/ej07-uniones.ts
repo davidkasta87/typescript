@@ -9,6 +9,7 @@ idPersona = 123; // Asignación de un número
 idPersona = "abc123"; // Asignación de una cadena de texto
 //console.log("ID de persona como cadena:", idPersona);
 
+// Función que maneja la unión de tipos usando typeof para verificar el tipo en runtime
 imprimirCodigo(idPersona);
 
 function imprimirCodigo(id: number | string) {
@@ -21,20 +22,24 @@ function imprimirCodigo(id: number | string) {
 
 
 //Intersección de tipos
+// Definimos un tipo base para productos
 type Producto = {
     id: number;
     nombre: string;
     precio: number
 }
 
+// Tipo adicional para productos con descuento
 type ConDescuento = {
     descuento: number; // Porcentaje de descuento
 }
 
-// Tipo que combina Producto y ConDescuento
+// Tipo que combina Producto y ConDescuento usando intersección (&)
+// Esto significa que debe tener todas las propiedades de ambos tipos
 type ProductoConDescuento = Producto & ConDescuento;
 
-constlibroEnOferta: ProductoConDescuento = {
+// Ejemplo de uso: un objeto que cumple con ProductoConDescuento
+const libroEnOferta: ProductoConDescuento = {
     id: 101,
     nombre: "El gran libro TypeScript Avanzado",
     precio: 25.99,
