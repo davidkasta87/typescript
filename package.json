@@ -1,0 +1,19 @@
+{
+  "name": "typescript-tutorial",
+  "version": "1.0.0",
+  "description": "A TypeScript learning project with exercises organized by chapters",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/cap01/ej01-Holamundo.js",
+    "dev": "ts-node",
+    "clean": "rm -rf dist"
+  },
+  "keywords": ["typescript", "tutorial", "learning"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.0"
+  }
+}
