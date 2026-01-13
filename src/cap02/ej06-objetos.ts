@@ -12,6 +12,7 @@ type Persona = {
     esAdmin: boolean;
 }
 
+// Creando una instancia de Persona con todas las propiedades
 const persona1: Persona = {
     id: 1,
     nombre: "Pablo",
@@ -19,13 +20,17 @@ const persona1: Persona = {
     esAdmin: false
 }
 
+// Creando otra instancia sin la propiedad opcional email
 const persona2: Persona = {
     id: 2,
     nombre: "María",
     esAdmin: true
 }
-persona2.nombre = "María García";
-//persona2.id = 3; ->Error: La propiedad 'id' es de solo lectura.
 
+// Modificando la propiedad nombre de persona2
+persona2.nombre = "María García";
+//persona2.id = 3; // Error: La propiedad 'id' es de solo lectura.
+
+// Mostrando las personas en formato de tabla
 console.table(persona1);
 console.table(persona2);
