@@ -18,3 +18,25 @@ function imprimirCodigo(id: number | string) {
         console.log(id);
     }
 }
+
+
+//Intersección de tipos
+type Producto = {
+    id: number;
+    nombre: string;
+    precio: number
+}
+
+type ConDescuento = {
+    descuento: number; // Porcentaje de descuento
+}
+
+// Tipo que combina Producto y ConDescuento
+type ProductoConDescuento = Producto & ConDescuento;
+
+constlibroEnOferta: ProductoConDescuento = {
+    id: 101,
+    nombre: "El gran libro TypeScript Avanzado",
+    precio: 25.99,
+    descuento: 15 // 15% de descuento
+};
