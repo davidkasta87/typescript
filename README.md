@@ -2,8 +2,10 @@
 
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
+[![MIT License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![GitHub](https://img.shields.io/badge/GitHub-DavidKasta87-black.svg)](https://github.com/DavidKasta87)
 
-This repository contains TypeScript learning exercises and examples organized by chapters. Perfect for beginners learning TypeScript fundamentals and advanced features.
+📚 Repositorio con ejercicios y ejemplos de TypeScript organizados por capítulos. Perfecto para aprender los fundamentos y características avanzadas de TypeScript.
 
 ## Project Structure
 
@@ -33,82 +35,100 @@ This repository contains TypeScript learning exercises and examples organized by
 - `ej06-objetos.ts` - Object types and interfaces
 - `ej07-uniones.ts` - Union and intersection types
 
-### Chapter 3 (cap03): Functions
+### Chapter 3 (cap03): Functions & Advanced Concepts
 
 - `ej08-funciones.ts` - Function basics, optional parameters, default values
+- `ej09-enums.ts` - Enums for defining named constants
+- `ej10-interface.ts` - Interface definitions and implementations
+- `ej11-literales.ts` - Literal types for precise type narrowing
+- `ej12-ascercionTipo.ts` - Type assertion and narrowing
+- `ej13-consumoAPI.ts` - API consumption examples
 
 ## Getting Started
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (version 18 or higher)
-- [npm](https://www.npmjs.com/) (comes with Node.js)
-
-### Installation
-
-1. Clone the repository:
+- [Nodea el repositorio:
 
 ```bash
-git clone <your-repo-url>
-cd typescript-tutorial
+git clone https://github.com/DavidKasta87/Typescript.git
+cd Typescript
 ```
+
+2. Instala las dependencia
+   git clone <your-repo-url>
+   cd typescript-tutorial
+
+````
 
 2. Install dependencies:
 
 ```bash
 npm install
-```
+````
 
 ### Development
 
-#### Compile TypeScript
+#### Compilar TypeScript
 
 ```bash
 npm run build
 ```
 
-This compiles all TypeScript files from `src/` to `dist/` directory.
+Compila todos los archivos TypeScript de `src/` al directorio `dist/`.
 
-#### Run Examples
+#### Ejecutar Ejercicios
 
-You can run individual examples using ts-node:
+Puedes ejecutar ejercicios individuales usando ts-node:
 
 ```bash
+# Ejemplo individual
 npx ts-node src/cap01/ej01-Holamundo.ts
 npx ts-node src/cap02/ej06-objetos.ts
 npx ts-node src/cap03/ej08-funciones.ts
 ```
 
-Or run the default example:
+O ejecutar el ejemplo por defecto:
 
 ```bash
 npm start
 ```
 
-#### Development Mode
+#### Modo de Desarrollo
 
 ```bash
-npm run dev src/cap01/ej01-Holamundo.ts
+npm run dev -- src/cap01/ej01-Holamundo.ts
 ```
 
-## Configuration
+Scripts Disponibles
 
-The project uses strict TypeScript settings in `tsconfig.json`:
+| Comando         | Descripción                     |
+| --------------- | ------------------------------- |
+| `npm run build` | Compila TypeScript a JavaScript |
+| `npm start`     | Ejecuta el ejemplo por defecto  |
+| `npm run dev`   | Modo desarrollo con ts-node     |
+| `npm run clean` | Elimina la carpeta dist         |
+| `npm run lint`  | Verifica errores de tipo        |
 
-- Strict mode enabled
-- Source maps for debugging
-- ES2020 target
-- CommonJS modules
+## Configuración
 
-## Contributing
+El proyecto usa configuración estricta de TypeScript en `tsconfig.json`:
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-chapter`)
-3. Make your changes
-4. Run `npm run build` to ensure everything compiles
-5. Commit your changes (`git commit -am 'Add new example'`)
-6. Push to the branch (`git push origin feature/new-chapter`)
-7. Create a Pull Request
+- ✅ Strict mode habilitado
+- 🗺️ Source maps para debugging
+- 🎯 Target ES2020
+- 📦 CommonJS modules
+
+## Contribuir
+
+1. Haz un fork del repositorio
+2. Crea una rama (`git checkout -b feature/new-chapter`)
+3. Realiza tus cambios
+4. Ejecuta `npm run build` para asegurar compilación
+5. Haz commit (`git commit -am 'Add new example'`)
+6. Push a la rama (`git push origin feature/new-chapter`)
+7. Abre unthe branch (`git push origin feature/new-chapter`)
+8. Create a Pull Request
 
 ## License
 

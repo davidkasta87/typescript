@@ -32,3 +32,11 @@ logs/
 # Temporary files
 tmp/
 temp/
+
+# Output files
+*.js
+!dist/
+
+# Package manager
+package-lock.json
+yarn.lock

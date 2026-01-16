@@ -7,10 +7,11 @@
     "build": "tsc",
     "start": "node dist/cap01/ej01-Holamundo.js",
     "dev": "ts-node",
-    "clean": "rm -rf dist"
+    "clean": "rm -rf dist",
+    "lint": "tsc --noEmit"
   },
   "keywords": ["typescript", "tutorial", "learning"],
-  "author": "Your Name",
+  "author": "DavidKasta87",
   "license": "MIT",
   "devDependencies": {
     "ts-node": "^10.9.1",
